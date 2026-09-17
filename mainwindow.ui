@@ -12,8 +12,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
-    <height>600</height>
+    <width>1200</width>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -111,6 +111,13 @@
               <height>170</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame#controlsFrame {
+	background-color: #031C2D;
+	border: 1px solid #087EA4;
+	border-radius: 8px;
+}</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
             </property>
@@ -132,11 +139,25 @@
                  <height>35</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LayoutDirection::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #22D9F5;
+border: none;
+background: transparent;</string>
+               </property>
                <property name="text">
                 <string>Controls</string>
                </property>
                <property name="alignment">
-                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                <set>Qt::AlignmentFlag::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -147,6 +168,12 @@
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame#controlsButtonFrame {
+	background: transparent;
+	border: none;
+}</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::Shape::StyledPanel</enum>
@@ -169,6 +196,29 @@
                     <height>45</height>
                    </size>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
+                  </property>
                   <property name="text">
                    <string>Connect Receiver</string>
                   </property>
@@ -187,6 +237,29 @@
                     <width>0</width>
                     <height>45</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
                   </property>
                   <property name="text">
                    <string>Sync Time</string>
@@ -207,6 +280,29 @@
                     <height>45</height>
                    </size>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
+                  </property>
                   <property name="text">
                    <string>Start Session</string>
                   </property>
@@ -225,6 +321,29 @@
                     <width>0</width>
                     <height>45</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
                   </property>
                   <property name="text">
                    <string>Download Data</string>
@@ -245,6 +364,29 @@
                     <height>45</height>
                    </size>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
+                  </property>
                   <property name="text">
                    <string>Generate Graph</string>
                   </property>
@@ -263,6 +405,29 @@
                     <width>0</width>
                     <height>45</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: #06283D;
+	color: #EAF7FF;
+	border: 1px solid #079AC4;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	background-color: #0A3A54;
+}
+
+QPushButton:pressed {
+	background-color: #07506C;
+}</string>
                   </property>
                   <property name="text">
                    <string>Export CSV</string>
