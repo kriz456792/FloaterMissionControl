@@ -274,13 +274,13 @@ border: none;</string>
                <property name="minimumSize">
                 <size>
                  <width>0</width>
-                 <height>35</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
-                 <height>35</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="font">
@@ -301,7 +301,7 @@ background: transparent;</string>
                 <string>Controls</string>
                </property>
                <property name="alignment">
-                <set>Qt::AlignmentFlag::AlignCenter</set>
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
                </property>
               </widget>
              </item>
@@ -611,6 +611,18 @@ QPushButton:pressed {
               <layout class="QHBoxLayout" name="horizontalLayout_2">
                <item>
                 <widget class="QLabel" name="receivedDataTitleLabel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <pointsize>14</pointsize>
@@ -625,6 +637,9 @@ font-weight: bold;</string>
                  </property>
                  <property name="text">
                   <string>Received Data Packets</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -920,13 +935,13 @@ border: none;</string>
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>45</height>
+                   <height>30</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>45</height>
+                   <height>30</height>
                   </size>
                  </property>
                  <property name="font">
@@ -943,6 +958,9 @@ font-weight: bold;</string>
                  </property>
                  <property name="text">
                   <string>Telemetry</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -971,7 +989,7 @@ background: transparent;</string>
                <property name="frameShadow">
                 <enum>QFrame::Shadow::Raised</enum>
                </property>
-               <layout class="QGridLayout" name="gridLayout_2">
+               <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1,1,1">
                 <item row="0" column="0">
                  <widget class="QFrame" name="depthCard">
                   <property name="sizePolicy">
@@ -983,7 +1001,7 @@ background: transparent;</string>
                   <property name="minimumSize">
                    <size>
                     <width>180</width>
-                    <height>0</height>
+                    <height>120</height>
                    </size>
                   </property>
                   <property name="maximumSize">
@@ -1008,6 +1026,13 @@ background: transparent;</string>
                   <layout class="QVBoxLayout" name="verticalLayout_7">
                    <item>
                     <widget class="QLabel" name="depthTitleLabel">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">color: #EAF7FF;
 border: none;
@@ -1016,6 +1041,9 @@ background: transparent;
                      </property>
                      <property name="text">
                       <string>Depth</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -1055,7 +1083,7 @@ font-weight: bold;</string>
                   <property name="minimumSize">
                    <size>
                     <width>180</width>
-                    <height>0</height>
+                    <height>120</height>
                    </size>
                   </property>
                   <property name="maximumSize">
@@ -1080,6 +1108,13 @@ font-weight: bold;</string>
                   <layout class="QVBoxLayout" name="verticalLayout_8">
                    <item>
                     <widget class="QLabel" name="pressureTitleLabel">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">color: #EAF7FF;
 border: none;
@@ -1088,6 +1123,9 @@ background: transparent;
                      </property>
                      <property name="text">
                       <string>Pressure</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -1127,7 +1165,7 @@ font-weight: bold;</string>
                   <property name="minimumSize">
                    <size>
                     <width>180</width>
-                    <height>0</height>
+                    <height>120</height>
                    </size>
                   </property>
                   <property name="maximumSize">
@@ -1152,6 +1190,13 @@ font-weight: bold;</string>
                   <layout class="QVBoxLayout" name="verticalLayout_9">
                    <item>
                     <widget class="QLabel" name="missionTimeTitleLabel">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">color: #EAF7FF;
 border: none;
@@ -1160,6 +1205,9 @@ background: transparent;
                      </property>
                      <property name="text">
                       <string>Elapsed Mission Time</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -1199,7 +1247,7 @@ font-weight: bold;</string>
                   <property name="minimumSize">
                    <size>
                     <width>180</width>
-                    <height>0</height>
+                    <height>120</height>
                    </size>
                   </property>
                   <property name="maximumSize">
@@ -1224,6 +1272,13 @@ font-weight: bold;</string>
                   <layout class="QVBoxLayout" name="verticalLayout_10">
                    <item>
                     <widget class="QLabel" name="waterTempTitleLabel">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">color: #EAF7FF;
 border: none;
@@ -1232,6 +1287,9 @@ background: transparent;
                      </property>
                      <property name="text">
                       <string>Water Temperature</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -1383,13 +1441,13 @@ font-weight: bold;</string>
                <property name="minimumSize">
                 <size>
                  <width>0</width>
-                 <height>35</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
-                 <height>35</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="font">
@@ -1407,6 +1465,9 @@ font-weight: bold;</string>
                <property name="text">
                 <string>Mission Profile</string>
                </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+               </property>
               </widget>
              </item>
              <item>
@@ -1416,6 +1477,12 @@ font-weight: bold;</string>
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>220</height>
+                </size>
                </property>
                <property name="styleSheet">
                 <string notr="true">QFrame#graphPlaceholderFrame{
@@ -1430,6 +1497,56 @@ font-weight: bold;</string>
                <property name="frameShadow">
                 <enum>QFrame::Shadow::Raised</enum>
                </property>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>170</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="graphPlaceHolder">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: #5F8191;
+border: none;
+background: transparent;
+font-size: 12px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Mission Profile Graph</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>169</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </widget>
              </item>
             </layout>
